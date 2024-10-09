@@ -1,0 +1,115 @@
+.recipe-detail-container {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative; 
+  
+    .recipe-detail-header {
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+      margin-bottom: 20px;
+      width: 100%; 
+  
+      .recipe-title {
+        text-align: center;
+        font-size: 24px;
+        color: #fff;
+        flex-grow: 1; 
+        margin: 0;
+      }
+  
+      .back-button {
+        position: absolute; 
+        top: 20px; 
+        left: 20px; 
+        background-color: orange;
+        border: none;
+        padding: 10px 20px;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
+  
+        &:hover {
+          background-color: darkorange;
+        }
+      }
+    }
+  
+    .recipe-detail-content {
+      background-color: #444444;
+      padding: 20px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      .recipe-image {
+        max-width: 100%;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        border: 4px solid orange;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  
+      h2 {
+        color: orange;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+  
+      .ingredient-list {
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 20px;
+        width: 100%; 
+  
+        li {
+          background-color: #555555;
+          margin: 5px 0;
+          padding: 10px;
+          border-radius: 4px;
+          display: flex;
+          align-items: center; 
+          width: 100%; 
+          justify-content: space-between;
+  
+          .ingredient {
+            font-weight: bold;
+            color: #fff;
+            text-align: left; 
+          }
+  
+          .colon {
+            margin: 0 8px; 
+            color: #ddd;
+            flex-shrink: 0; 
+          }
+  
+          .measure {
+            color: #ddd;
+            text-align: right; 
+            flex-shrink: 0; 
+          }
+        }
+      }
+  
+      .instructions {
+        background-color: #555555;
+        padding: 20px;
+        border-radius: 8px;
+        color: #fff;
+        line-height: 1.6;
+        margin-top: 20px;
+        width: 100%; 
+      }
+    }
+  }
+  

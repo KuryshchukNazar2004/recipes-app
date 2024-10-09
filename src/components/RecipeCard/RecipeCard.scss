@@ -1,0 +1,46 @@
+.recipe-card {
+    background-color: #333333;
+    border: 1px solid #444444;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  
+    h3 {
+      color: #ffffff;
+      margin: 12px 0;
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s;
+  
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  
+    button {
+      background-color: orange;
+      color: #333333;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      margin: 8px 0;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+  
+      &:hover {
+        background-color: darkorange;
+        transform: translateY(-2px);
+      }
+  
+      &:active {
+        transform: translateY(1px);
+      }
+    }
+  }
+  
